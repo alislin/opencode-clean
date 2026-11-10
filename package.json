@@ -1,0 +1,18 @@
+{
+  "name": "opencode-clean",
+  "version": "0.1.0",
+  "description": "OpenCode storage cleaner: semantic purge (legacy tables, subagent sessions, orphan files) + safe SQLite physical maintenance (freelist analyze, backup, VACUUM). Zero runtime dependencies.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "bin": {
+    "ocgc-clean": "bin/ocgc-clean.js",
+    "ocgc-manage": "bin/ocgc-manage.js"
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "dry": "node bin/ocgc-clean.js --dry-run"
+  },
+  "license": "MIT"
+}
